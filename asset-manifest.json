@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.abcd760d.css",
-    "main.js": "/static/js/main.2f5ff497.js",
-    "static/media/spinner.gif": "/static/media/spinner.11d9cde8ebaeadb07ba7.gif",
-    "index.html": "/index.html",
-    "main.abcd760d.css.map": "/static/css/main.abcd760d.css.map",
-    "main.2f5ff497.js.map": "/static/js/main.2f5ff497.js.map"
+    "main.css": "/lizaalert-test/static/css/main.abcd760d.css",
+    "main.js": "/lizaalert-test/static/js/main.cf1fab48.js",
+    "static/media/spinner.gif": "/lizaalert-test/static/media/spinner.11d9cde8ebaeadb07ba7.gif",
+    "index.html": "/lizaalert-test/index.html",
+    "main.abcd760d.css.map": "/lizaalert-test/static/css/main.abcd760d.css.map",
+    "main.cf1fab48.js.map": "/lizaalert-test/static/js/main.cf1fab48.js.map"
   },
   "entrypoints": [
     "static/css/main.abcd760d.css",
-    "static/js/main.2f5ff497.js"
+    "static/js/main.cf1fab48.js"
   ]
 }
