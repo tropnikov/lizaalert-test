@@ -1,3 +1,6 @@
-/* .story {
-  list-style-type: none;
-} */
+.newstory__score {
+  font-weight: 600;
+}
+.newstory__author {
+  font-style: italic;
+}

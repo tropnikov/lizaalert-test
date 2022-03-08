@@ -4,8 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import api from '../../utils/api';
 import NewStories from '../NewStories/NewStories';
 import Story from '../Story/Story';
+import Spinner from '../Spinner/Spinner';
 import './App.css';
-import spinner from '../../images/spinner.gif';
 
 const App = () => {
   const [newStories, setNewStories] = useState([]);
@@ -39,10 +39,7 @@ const App = () => {
             path="/"
             element={
               isLoading ? (
-                <>
-                  <img className="spinner" src={spinner} alt="spinner" />
-                  <h2 className="header_loading">Loading...</h2>
-                </>
+                <Spinner />
               ) : (
                 <section>
                   <NewStories stories={newStories} />

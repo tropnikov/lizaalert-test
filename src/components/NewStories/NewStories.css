@@ -1,6 +1,22 @@
 .stories-container {
+  text-decoration: none;
+  color: black;
 }
 .story {
+  padding: 10px 5px;
   border: 1px solid gray;
   border-radius: 10px;
+}
+.story__link {
+  text-decoration: none;
+  color: black;
+}
+.story__info {
+  margin: 0;
+}
+.story__score {
+  font-weight: 600;
+}
+.story__author {
+  font-style: italic;
 }

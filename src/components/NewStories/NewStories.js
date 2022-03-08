@@ -7,13 +7,14 @@ const NewStories = ({ stories }) => {
     <ol className="stories-container">
       {stories.map((item) => {
         return (
-          <li key={item.id} className="story">
-            <Link to={`/${item.id}`}>
-              <div>
-                <p>{item.title}</p>
-                <p>
-                  <span>
-                    {item.score} by {item.by}{' '}
+          <li key={item.id}>
+            <Link to={`/${item.id}`} className="story__link">
+              <div className="story">
+                <h4 className="story__title">{item.title}</h4>
+                <p className="story__info">
+                  Score: <span className="story__score">{item.score}</span>, by{' '}
+                  <span className="story__author">{item.by}</span> at{' '}
+                  <span className="story__date">
                     {getDateStringFromUnixTime(item.time)}
                   </span>
                 </p>

@@ -1,6 +1,6 @@
 {
+  "homepage": "https://tropnikov.github.io",
   "name": "lizaalert",
-  "homepage": "https://tropnikov.github.io/lizaalert-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

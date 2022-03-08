@@ -1,7 +1,10 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { Card } from 'react-bootstrap';
 import parse from 'html-react-parser';
 import api from '../../utils/api';
+import getDateStringFromUnixTime from '../../utils/dateConversion';
+import './Comment.css';
 
 const Comment = ({ comment }) => {
   const [newComment, setNewComment] = useState({});
@@ -21,8 +24,14 @@ const Comment = ({ comment }) => {
 
   return (
     !newComment.deleted && (
-      <div>
+      <div className="comment">
         {newComment.text && parse(newComment.text)}
+        <p>
+          by <span className="comment__author">{newComment.by}</span> at{' '}
+          <span className="comment__date">
+            {getDateStringFromUnixTime(newComment.time)}
+          </span>
+        </p>
         {newComment.kids && (
           <div>
             {newComment.kids.map((item) => (
