@@ -64,9 +64,7 @@ const Story = ({ stories }) => {
       </p>
       <p> Comments: {newStory.descendants}</p>
       {newStory.kids && <CommentsList comments={newStory.kids} />}
-      <Button className="button" onClick={() => navigate(-1)}>
-        Back
-      </Button>
+      <Button onClick={() => navigate(-1)}>Back</Button>
     </div>
   );
 };

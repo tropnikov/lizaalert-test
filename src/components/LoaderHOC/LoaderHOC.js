@@ -1,21 +1,23 @@
-import React from 'react';
-import { useState } from 'react';
+// not finished with HOC loader component for comments loading indication
 
-const LoaderHOC =
-  (Component) =>
-  ({ isLoading, children, ...props }) => {
-    // const HOC = () => {
-    // const [isLoading, setLoading] = useState(true);
-    // const setLoadingState = (isCompLoading) => setLoading(isCompLoading);
+// import React from 'react';
+// import { useState } from 'react';
 
-    return isLoading ? (
-      <h1>Loading...</h1>
-    ) : (
-      <Component {...props}>{children}</Component>
-    );
-    // };
+// const LoaderHOC =
+//   (Component) =>
+//   ({ isLoading, children, ...props }) => {
+//     // const HOC = () => {
+//     // const [isLoading, setLoading] = useState(true);
+//     // const setLoadingState = (isCompLoading) => setLoading(isCompLoading);
 
-    // return HOC;
-  };
+//     return isLoading ? (
+//       <h1>Loading...</h1>
+//     ) : (
+//       <Component {...props}>{children}</Component>
+//     );
+//     // };
 
-export default LoaderHOC;
+//     // return HOC;
+//   };
+
+// export default LoaderHOC;
